@@ -38,11 +38,12 @@
             Please select an option 1-5 (1 = strongly agree...5 = strongly disagree)
           </small>
     			 <select class="form-control" id="answer1" class="fonts">
-      				<option>1</option>
+      				<option></option>
+              <option>1</option>
               <option>2</option>
-      				<option>3</option>
-      				<option>4</option>
-      				<option>5</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
     			</select>
   			</div>
   			<div class="form-group">
@@ -52,6 +53,7 @@
             Please select an option 1-5 (1 = strongly agree...5 = strongly disagree)
           </small>
     			 <select class="form-control" id="answer2" class="fonts">
+              <option></option>
               <option>1</option>
               <option>2</option>
               <option>3</option>
@@ -66,6 +68,7 @@
             Please select an option 1-5 (1 = strongly agree...5 = strongly disagree)
           </small>
     			 <select class="form-control" id="answer3" class="fonts">
+              <option></option>
               <option>1</option>
               <option>2</option>
               <option>3</option>
@@ -80,6 +83,7 @@
             Please select an option 1-5 (1 = strongly agree...5 = strongly disagree)
           </small>
     			 <select class="form-control" id="answer4" class="fonts">
+              <option></option>
               <option>1</option>
               <option>2</option>
               <option>3</option>
@@ -94,6 +98,7 @@
             Please select an option 1-5 (1 = strongly agree...5 = strongly disagree)
           </small>
     			 <select class="form-control" id="answer5" class="fonts">
+              <option></option>
               <option>1</option>
               <option>2</option>
               <option>3</option>
@@ -108,6 +113,7 @@
             Please select an option 1-5 (1 = strongly agree...5 = strongly disagree)
           </small>
     			 <select class="form-control" id="answer6" class="fonts">
+              <option></option>
               <option>1</option>
               <option>2</option>
               <option>3</option>
@@ -122,6 +128,7 @@
             Please select an option 1-5 (1 = strongly agree...5 = strongly disagree)
           </small>
     			 <select class="form-control" id="answer7" class="fonts">
+              <option></option>
               <option>1</option>
               <option>2</option>
               <option>3</option>
@@ -136,6 +143,7 @@
             Please select an option 1-5 (1 = strongly agree...5 = strongly disagree)
           </small>
     			 <select class="form-control" id="answer8" class="fonts">
+              <option></option>
               <option>1</option>
               <option>2</option>
               <option>3</option>
@@ -150,6 +158,7 @@
             Please select an option 1-5 (1 = strongly agree...5 = strongly disagree)
           </small>
     			 <select class="form-control" id="answer9" class="fonts">
+              <option></option>
               <option>1</option>
               <option>2</option>
               <option>3</option>
@@ -164,6 +173,7 @@
             Please select an option 1-5 (1 = strongly agree...5 = strongly disagree)
           </small>
     			 <select class="form-control" id="answer10" class="fonts">
+              <option></option>
               <option>1</option>
               <option>2</option>
               <option>3</option>
@@ -216,7 +226,7 @@
 var new_user = {
       name : $("#name").val().trim(),
       photo : $("#photo").val().trim(),
-      score : [
+      scores : [
                 $("#answer1").val(),
                 $("#answer2").val(),
                 $("#answer3").val(),
@@ -239,39 +249,64 @@ console.log(new_user);
 $(".submit").on("click", function(event) {
       event.preventDefault();
 
-      for (i=0; i < new_user.score.length; i++){
-          if ( new_user.name == null || new_user.photo == null) {
+      for (i=0; i < new_user.scores.length; i++){
+          if ( new_user.scores[i] == null || new_user.name == null || new_user.photo == null) {
             return alert("Please fill out every required field and every survey question in order to get a match.");
           }
 
           else {
 
-             $.post("/api/friends", new_user,
+             $.post("/friends", new_user,
               function(data) {
-
+                if (data) {
                 alert("Survey Submitted!");
-
+              }
+                else {
+                alert("there has been an error.");
+              }
               });
 
               $("#name").val("");
               $("#photo").val("");
               // set the options menu to a preset option? 1? need quotes? 
-              $("#answer1").val(1);
-              $("#answer2").val(1);
-              $("#answer3").val(1);
-              $("#answer4").val(1);
-              $("#answer5").val(1);
-              $("#answer6").val(1);
-              $("#answer7").val(1);
-              $("#answer8").val(1);
-              $("#answer9").val(1);
-              $("#answer10").val(1);
+              $("#answer1").val("");
+              $("#answer2").val("");
+              $("#answer3").val("");
+              $("#answer4").val("");
+              $("#answer5").val("");
+              $("#answer6").val("");
+              $("#answer7").val("");
+              $("#answer8").val("");
+              $("#answer9").val("");
+              $("#answer10").val("");
 
         };
 
-  };
+
+      };
+
+      
+
 
 });
+
+
+function compatibility () {
+
+  // where does the ajax call need to be?
+    var currentURL = window.location.origin;
+
+    $.ajax({ url: currentURL + "/friends", method: "GET" })
+        .then(function(data) {
+
+          for ( i=0; i < data.scores.length; i++) {
+            // comparing and subtracting numbers from two arrays?
+              new_user.score
+
+          }
+
+        });
+}
 
 
 </script>
