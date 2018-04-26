@@ -8,12 +8,38 @@ module.exports = function(app) {
 	});
 
 	app.post("/friends", function(req, res) {
-		// what else to return? Friends data info
-		var name = request.body.name;
-		var photo = request.body.photo;
-		var scores = request.body.scores;
+		var userData = req.body;
+		console.log(userData);
 
-		res.json();
+		var userScores = userData.scores;
+		var userPhoto = userData.photo;
+		var userName = userData.name;
+
+
+		var match = {name: "", photo: "", scoreDifference: 20};
+
+
+
+		for (var i=0; i < friendsData.length; i++) {
+
+			userDifference = 0;
+
+			for (var x=0; x < 10; x++) {
+				userDifference += Math.abs(parseInt(userScores[x] - friendsData[i].scores[x]));
+
+				if (userDifference <= match.scoreDifference) {
+
+					match.name = friendsData[i].name;
+					match.photo = friendsData[i].photo;
+					match.scoreDifference = userDifference;
+				}
+
+
+			}
+		}
+
+		friendsData.push(userData);
+		res.json(match);
 	})
 
 };

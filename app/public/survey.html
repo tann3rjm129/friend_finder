@@ -10,15 +10,26 @@
 
       <!-- reg bootstrap -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+      <style type="text/css">
+          
+          .fonts {
+                  color: white;
+          }
+
+      </style>
  </head>
 
-<body>
+<body style="background-color: #074a76;">
 
 <div class="container">
 
-      <h1 class="display-4 text-center fonts" style="">Survey Questions</h1>
-      <hr class="my-4">
-        <p class="lead" style="">About You</p>
+      <h1 class="display-4 text-center fonts" style="">Political Friend Finder Survey</h1>
+      <h2 class="text-center fonts" style="font-size: 16px;">
+    Below are a list of political statments. Choose how you feel about each statement, submit and find a new politically compatible friend today!
+    </h2>
+      <hr class="my-4 fonts">
+        <p class="lead fonts" style="">About You</p>
         <form>
   			<div class="form-group">
     			<label for="name" class="fonts">Name (required)</label>
@@ -29,185 +40,150 @@
     			<input type="text" class="form-control" id="photo" aria-describedby="photoHelp">
   			</div>
   		</form>
-  	<hr class="my-4">
-  		<form>
-  			<div class="form-group">
-  				<p class="lead" style="">Question 1</p>
-   				<label for="exampleFormControlSelect1" class="fonts">Instert Question Here</label>
-          <small id="answerHelp" class="form-text text-muted">
-            Please select an option 1-5 (1 = strongly agree...5 = strongly disagree)
-          </small>
+  	<hr class="my-4 fonts">
+  		<form style="margin-top: 30px; margin-top: 50px;">
+  			<div class="form-group" style="margin-bottom: 30px;">
+  				<p class="lead fonts" style="margin-bottom: 0px;">1. Gun control measures are an effective means to hamper gun violence.</p>
+   				<label for="exampleFormControlSelect1" class="fonts"></label>
     			 <select class="form-control" id="answer1" class="fonts">
-      				<option></option>
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
+              <option value="1">strongly agree</option>
+              <option value="2">somewhat agree</option>
+              <option value="3">neutral</option>
+              <option value="4">somewhat disagree</option>
+              <option value="5">strongly disagree</option>
     			</select>
   			</div>
-  			<div class="form-group">
-  				<p class="lead" style="">Question 2</p>
-   				<label for="exampleFormControlSelect1" class="fonts">Instert Question Here</label>
-          <small id="answerHelp" class="form-text text-muted">
-            Please select an option 1-5 (1 = strongly agree...5 = strongly disagree)
-          </small>
+  			<div class="form-group" style="margin-bottom: 30px;">
+          <p class="lead fonts" style="margin-bottom: 0px;">2. Immirgrants here in the United States illegally should be deported back to their home country immediately.</p>
+   				<label for="exampleFormControlSelect1" class="fonts"></label>
     			 <select class="form-control" id="answer2" class="fonts">
-              <option></option>
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
+              <option value="1">strongly agree</option>
+              <option value="2">somewhat agree</option>
+              <option value="3">neutral</option>
+              <option value="4">somewhat disagree</option>
+              <option value="5">strongly disagree</option>
     			</select>
   			</div>
-  			<div class="form-group">
-  				<p class="lead" style="">Question 3</p>
-   				<label for="exampleFormControlSelect1" class="fonts">Instert Question Here</label>
-          <small id="answerHelp" class="form-text text-muted">
-            Please select an option 1-5 (1 = strongly agree...5 = strongly disagree)
-          </small>
+  			<div class="form-group" style="margin-bottom: 30px;">
+          <p class="lead fonts" style="margin-bottom: 0px;">3. Healthcare should be a right in this country.</p>
+   				<label for="exampleFormControlSelect1" class="fonts"></label>
     			 <select class="form-control" id="answer3" class="fonts">
-              <option></option>
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
+              <option value="1">strongly agree</option>
+              <option value="2">somewhat agree</option>
+              <option value="3">neutral</option>
+              <option value="4">somewhat disagree</option>
+              <option value="5">strongly disagree</option>
     			</select>
   			</div>
-  			<div class="form-group">
-  				<p class="lead" style="">Question 4</p>
-   				<label for="exampleFormControlSelect1" class="fonts">Instert Question Here</label>
-          <small id="answerHelp" class="form-text text-muted">
-            Please select an option 1-5 (1 = strongly agree...5 = strongly disagree)
-          </small>
+  			<div class="form-group" style="margin-bottom: 30px;">
+          <p class="lead fonts" style="margin-bottom: 0px;">4. The United States was intended to be a "Christian" nation.</p>
+   				<label for="exampleFormControlSelect1" class="fonts"></label>
     			 <select class="form-control" id="answer4" class="fonts">
-              <option></option>
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
+              <option value="1">strongly agree</option>
+              <option value="2">somewhat agree</option>
+              <option value="3">neutral</option>
+              <option value="4">somewhat disagree</option>
+              <option value="5">strongly disagree</option>
     			</select>
   			</div>
-  			<div class="form-group">
-  				<p class="lead" style="">Question 5</p>
-   				<label for="exampleFormControlSelect1" class="fonts">Instert Question Here</label>
-          <small id="answerHelp" class="form-text text-muted">
-            Please select an option 1-5 (1 = strongly agree...5 = strongly disagree)
-          </small>
+  			<div class="form-group" style="margin-bottom: 30px;">
+          <p class="lead fonts" style="margin-bottom: 0px;">5. You shouldn't punish successful people for earning more money with higher taxes as you climb up the socio-economic ladder. You should pay less in fact. </p>
+   				<label for="exampleFormControlSelect1" class="fonts"></label>
     			 <select class="form-control" id="answer5" class="fonts">
-              <option></option>
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
+              <option value="1">strongly agree</option>
+              <option value="2">somewhat agree</option>
+              <option value="3">neutral</option>
+              <option value="4">somewhat disagree</option>
+              <option value="5">strongly disagree</option>
     			</select>
   			</div>
-  			<div class="form-group">
-  				<p class="lead" style="">Question 6</p>
-   				<label for="exampleFormControlSelect1" class="fonts">Instert Question Here</label>
-          <small id="answerHelp" class="form-text text-muted">
-            Please select an option 1-5 (1 = strongly agree...5 = strongly disagree)
-          </small>
+  			<div class="form-group" style="margin-bottom: 30px;">
+          <p class="lead fonts" style="margin-bottom: 0px;">6. LGBTQ+ eqaulity should be universal and not rely on a patchwork state system.</p>
+   				<label for="exampleFormControlSelect1" class="fonts"></label>
     			 <select class="form-control" id="answer6" class="fonts">
-              <option></option>
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
+              <option value="1">strongly agree</option>
+              <option value="2">somewhat agree</option>
+              <option value="3">neutral</option>
+              <option value="4">somewhat disagree</option>
+              <option value="5">strongly disagree</option>
     			</select>
   			</div>
-  			<div class="form-group">
-  				<p class="lead" style="">Question 7</p>
-   				<label for="exampleFormControlSelect1" class="fonts">Instert Question Here</label>
-          <small id="answerHelp" class="form-text text-muted">
-            Please select an option 1-5 (1 = strongly agree...5 = strongly disagree)
-          </small>
+  			<div class="form-group" style="margin-bottom: 30px;">
+          <p class="lead fonts" style="margin-bottom: 0px;">7. Racism is still alive and well in America.</p>
+   				<label for="exampleFormControlSelect1" class="fonts"></label>
     			 <select class="form-control" id="answer7" class="fonts">
-              <option></option>
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
+              <option value="1">strongly agree</option>
+              <option value="2">somewhat agree</option>
+              <option value="3">neutral</option>
+              <option value="4">somewhat disagree</option>
+              <option value="5">strongly disagree</option>
     			</select>
   			</div>
-  			<div class="form-group">
-  				<p class="lead" style="">Question 8</p>
-   				<label for="exampleFormControlSelect1" class="fonts">Instert Question Here</label>
-          <small id="answerHelp" class="form-text text-muted">
-            Please select an option 1-5 (1 = strongly agree...5 = strongly disagree)
-          </small>
+  			<div class="form-group" style="margin-bottom: 30px;">
+          <p class="lead fonts" style="margin-bottom: 0px;">8. When ruling on a case in the Supreme Court of the United States, the justices should practice originalism (the interpretation of the written constitution is [or should be] consistent with what was meant by those who drafted and ratified it). </p>
+   				<label for="exampleFormControlSelect1" class="fonts"></label>
     			 <select class="form-control" id="answer8" class="fonts">
-              <option></option>
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
+              <option value="1">strongly agree</option>
+              <option value="2">somewhat agree</option>
+              <option value="3">neutral</option>
+              <option value="4">somewhat disagree</option>
+              <option value="5">strongly disagree</option>
     			</select>
   			</div>
-  			<div class="form-group">
-  				<p class="lead" style="">Question 9</p>
-   				<label for="exampleFormControlSelect1" class="fonts">Instert Question Here</label>
-          <small id="answerHelp" class="form-text text-muted">
-            Please select an option 1-5 (1 = strongly agree...5 = strongly disagree)
-          </small>
+  			<div class="form-group" style="margin-bottom: 30px;">
+          <p class="lead fonts" style="margin-bottom: 0px;">9. Voter ID's should be required to vote in every state.</p>
+   				<label for="exampleFormControlSelect1" class="fonts"></label>
     			 <select class="form-control" id="answer9" class="fonts">
-              <option></option>
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
+              <option value="1">strongly agree</option>
+              <option value="2">somewhat agree</option>
+              <option value="3">neutral</option>
+              <option value="4">somewhat disagree</option>
+              <option value="5">strongly disagree</option>
     			</select>
   			</div>
-  			<div class="form-group">
-  				<p class="lead" style="">Question 10</p>
-   				<label for="exampleFormControlSelect1" class="fonts">Instert Question Here</label>
-          <small id="answerHelp" class="form-text text-muted">
-            Please select an option 1-5 (1 = strongly agree...5 = strongly disagree)
-          </small>
+  			<div class="form-group" style="margin-bottom: 30px;">
+          <p class="lead fonts" style="margin-bottom: 0px;">10. The media's problem with bias is one of sensationalism (trying to get the highest ratings, most "clicks' per page, etc.) not an agressive political agenda. [In general, not including hardline newsoutlets of left or right ideology]</p>
+   				<label for="exampleFormControlSelect1" class="fonts"></label>
     			 <select class="form-control" id="answer10" class="fonts">
-              <option></option>
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
+              <option value="1">strongly agree</option>
+              <option value="2">somewhat agree</option>
+              <option value="3">neutral</option>
+              <option value="4">somewhat disagree</option>
+              <option value="5">strongly disagree</option>
     			</select>
   			</div>
   			
 		</form>
 
-	    <button type="button" class="btn btn-primary submit" data-toggle="modal" data-target="#ModalCenter">Submit</button>
-		<hr class="my-4">
+	    <button type="button" class="btn btn-danger btn-lg btn-block submit" style="margin-top: 30px;">Submit</button>
+		<hr class="my-4 fonts">
 
-		<a href="/friends"><p style="float: left;">API Friends List</p></a>
-		<a href="https://github.com/tann3rjm129"><p style="float: left; margin-left: 15px;">Github Repo</p></a>
+		<a href="/friends"><p style="float: left;" class="fonts">API Friends List</p></a>
+		<a href="https://github.com/tann3rjm129"><p style="float: left; margin-left: 15px;" class="fonts">Github Repo</p></a>
 
   </div>
 
 <!-- modal -->
-  <div class="modal fade" id="ModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal fade" id="modalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLongTitle">Meet your most compatible Friend!</h5>
+          <h5 class="modal-title" id="exampleModalLongTitle">Meet your new Best Friend!</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
-          ...
+          <div class="row">
+          <img id="matchImg" src="" style="height: 200px; width: 200px; margin-left: 30%;" class="text-center">
+          </div>
+          <div class="row">
+          <h2 id="matchName" style="margin-left: 25%;" class="text-center"></h2>
+          </div>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <a href="/"><button type="button" class="btn btn-primary">home</button></a>
+          <a href="/"><button type="button" class="btn btn-danger">Home</button></a>
         </div>
       </div>
     </div>
@@ -217,96 +193,74 @@
 
  
 <!-- reg bootstrap -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 <script type="text/javascript">
 
-var new_user = {
-      name : $("#name").val().trim(),
-      photo : $("#photo").val().trim(),
-      scores : [
-                $("#answer1").val(),
-                $("#answer2").val(),
-                $("#answer3").val(),
-                $("#answer4").val(),
-                $("#answer5").val(),
-                $("#answer6").val(),
-                $("#answer7").val(),
-                $("#answer8").val(),
-                $("#answer9").val(),
-                $("#answer10").val()
-              ]
-};
+$(document).ready(function () {
 
-new_user.name = new_user.name.replace(/\s+/g, "").toLowerCase();
-new_user.photo = new_user.photo.replace(/\s+/g, "").toLowerCase();
-
-
-console.log(new_user);
 
 $(".submit").on("click", function(event) {
       event.preventDefault();
 
-      for (i=0; i < new_user.scores.length; i++){
-          if ( new_user.scores[i] == null || new_user.name == null || new_user.photo == null) {
-            return alert("Please fill out every required field and every survey question in order to get a match.");
+      var new_user = {
+                                name : $("#name").val().trim(),
+                                photo : $("#photo").val().trim(),
+                                scores : [
+                                          $("#answer1").val(),
+                                          $("#answer2").val(),
+                                          $("#answer3").val(),
+                                          $("#answer4").val(),
+                                          $("#answer5").val(),
+                                          $("#answer6").val(),
+                                          $("#answer7").val(),
+                                          $("#answer8").val(),
+                                          $("#answer9").val(),
+                                          $("#answer10").val()
+                                        ]
+                          };
+
+        new_user.name = new_user.name.replace(/\s+/g, "").toLowerCase();
+        new_user.photo = new_user.photo.replace(/\s+/g, "").toLowerCase();
+
+          if ( new_user.name == "" || new_user.photo == "") {
+            alert("Please fill out every required field and survey question in order to get a match.");
+            return;
           }
 
           else {
 
-             $.post("/friends", new_user,
+              var currentURL = window.location.origin;
+
+             $.post( currentURL + "/friends", new_user,
               function(data) {
-                if (data) {
+
+                console.log(data);
+
                 alert("Survey Submitted!");
-              }
-                else {
-                alert("there has been an error.");
-              }
+
+                $("#matchName").text(data.name);
+                $("#matchImg").attr("src", data.photo);
+                $("#modalCenter").modal("toggle")
+
               });
 
               $("#name").val("");
               $("#photo").val("");
-              // set the options menu to a preset option? 1? need quotes? 
-              $("#answer1").val("");
-              $("#answer2").val("");
-              $("#answer3").val("");
-              $("#answer4").val("");
-              $("#answer5").val("");
-              $("#answer6").val("");
-              $("#answer7").val("");
-              $("#answer8").val("");
-              $("#answer9").val("");
-              $("#answer10").val("");
 
         };
 
 
-      };
+   
 
-      
+
 
 
 });
 
-
-function compatibility () {
-
-  // where does the ajax call need to be?
-    var currentURL = window.location.origin;
-
-    $.ajax({ url: currentURL + "/friends", method: "GET" })
-        .then(function(data) {
-
-          for ( i=0; i < data.scores.length; i++) {
-            // comparing and subtracting numbers from two arrays?
-              new_user.score
-
-          }
-
-        });
-}
+});
 
 
 </script>
