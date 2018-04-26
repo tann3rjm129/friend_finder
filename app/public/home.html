@@ -8,10 +8,25 @@
 
     <title>Home Page</title>
 
-      <!-- reg bootstrap -->
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<!--       reg bootstrap
+ -->      <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
 
-  
+<!-- Font Awesome -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!-- Bootstrap core CSS -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+      <!-- Material Design Bootstrap -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.0/css/mdb.min.css" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Comfortaa">
+
+  <style type="text/css">
+          
+          .fonts {
+                  
+                  font-family: 'Comfortaa', 'cursive';         
+          }
+
+      </style>
 
   </head>
 
@@ -19,17 +34,22 @@
 
 <div class="container">
 
-  <div class="jumbotron" style="opacity: 0.85;">
-      <h1 class="display-4 text-center fonts" style="">Political Friend Finder</h1>
-      <h2 style="font-size: 16px;">Take the hassle out of fighting about politics after a few beers deep. Find a congressinal and/or compatibile friend that you can hit the bars with!</h2>
+  <div class="jumbotron" style="opacity: 0.85;margin-top: 50px;">
+      <h1 class="display-2 text-center fonts" style="color: #074a76;">Politics Pals<i class="fa fa-flag-o fa-1x" style="margin-left: 10px;" aria-hidden="true"></i></h1>
+      <p class="lead text-center fonts" style="font-size: 20px;">Take the hassle out of fighting about politics after a few beers deep with a new acquaintance...</p>
+      <p class="text-center fonts" style="font-size: 16px; font-weight: bold;">Find a political figure and/or compatibile friend that you can hit the bars with!</p>
       <hr class="my-4">
-        <p class="lead" style="">Finish our survey.</p>
-        <p style="">Find a friend with similar thoughts on politics.</p>
-        <a href="/survey"><button type="button" class="btn btn-danger start">Click to start!</button></a>
+        <p class="lead fonts" style="font-style: italic;">Finish our survey.</p>
+        <p class="lead fonts" style="font-style: italic;">Find a friend with similar thoughts on politics.</p>
+        <div class="row">
+        <a href="/survey"><button type="button" class="btn btn-danger center fonts">Click to start!</button></a>
+          <div class="col-md-10"></div>
+        </div>
+
+        <a href="/friends"><p style="float: left; margin-top: 30px; color: red;" class="fonts">API Friends List</p></a>
+        <a href="https://github.com/tann3rjm129"><p style="float: left; margin-left: 15px; color: red; margin-top: 30px;" class="fonts">Github Repo</p></a>
   </div>
 
-<a href="/friends"><p style="float: left; color: white; margin-top: 30px;">API Friends List</p></a>
-<a href="https://github.com/tann3rjm129"><p style="float: left; margin-left: 15px; color: white; margin-top: 30px;">Github Repo</p></a>
 
 </div>
 
@@ -37,9 +57,16 @@
  
 <!-- reg bootstrap -->
 <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
 
+
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.0/js/mdb.min.js"></script>
 
 
   </body>
